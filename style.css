@@ -1063,3 +1063,86 @@ body {
   0%, 100% { transform: translateY(0) scale(1.02); }
   50%      { transform: translateY(-6px) scale(1.02); }
 }
+
+/* ===== CYSE 201S MATERIALS ===== */
+.cyse-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cyse-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--accent);
+}
+
+.cyse-meta {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  margin-bottom: 1.4rem;
+}
+
+.pdf-frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+  background: #020617;
+}
+
+/* keep the PDF full-width but control height */
+.pdf-frame embed {
+  display: block;
+  width: 100%;
+  height: 52rem; /* adjust taller/shorter if you want */
+}
+
+/* ===== PHISHING RESEARCH PAPER SECTION ===== */
+.phish-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--accent);
+}
+
+.phish-description {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin-bottom: 1.8rem;
+  line-height: 1.75;
+}
+
+/* Image styling */
+.phish-media {
+  margin-bottom: 1.6rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+.phish-media img {
+  display: block;
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+}
+
+/* PDF viewer frame */
+.pdf-frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+  background: #020617;
+}
+
+.pdf-frame embed {
+  width: 100%;
+  height: 55rem; /* adjust if you want taller or shorter */
+  display: block;
+}
